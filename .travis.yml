@@ -18,7 +18,7 @@ after_success:
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     
     #Take those images and push them to docker hub
-    - docker push -t tomasoares/dockercourse-multi-client
-    - docker push -t tomasoares/dockercourse-multi-nginx
-    - docker push -t tomasoares/dockercourse-multi-server
-    - docker push -t tomasoares/dockercourse-multi-worker
+    - docker push tomasoares/dockercourse-multi-client
+    - docker push tomasoares/dockercourse-multi-nginx
+    - docker push tomasoares/dockercourse-multi-server
+    - docker push tomasoares/dockercourse-multi-worker
